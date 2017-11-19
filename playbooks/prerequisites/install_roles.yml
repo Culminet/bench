@@ -9,7 +9,6 @@
     - mysql_secure_installation: True
   roles:
     - { role: locale, tags: "locale" }
-    - { role: swap, tags: "swap", when: production }
     - { role: logwatch, tags: "logwatch", when: production }
     - { role: bash_screen_wall, tags: "bash_screen_wall", when: production }
     - { role: frappe_selinux, tags: "frappe_selinux", when: production }
